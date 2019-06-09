@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+/*
+** fatImg
+*/
+  .fatImg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fatImg div{
+    width: 90%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .fatImg.active{
+    z-index: 10;
+    display: flex;
+  }
+
+/*
+** Container
+*/
+  
+  .container {
+    max-width: 100vw;
+    margin: auto;
+  }
+
+
+  h1 {
+    font-size: 50px;;
+    font-weight: bolder;
+    word-break: break-all;
+  }  
+
+
+/**
+*** Bloc
+*/
+
+  .bloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  
+
+  .bloc,
+  .bloc > .line {
+    padding: 10px;
+  }
+
+
+  .line{
+    background-color: white;
+    margin: 20px;
+  }
+  
+  .myImages{
+    width: 20.25rem;
+    padding: 10px;
+  }
+
+  .myImages img{
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  }
+
+  .myImages .text{
+    padding: 20px  0;
+  }
+
+  .myImages .text h3{
+    font-weight: 700;
+  }
+  
+  /*
+  *** Responsive
+   */
+  @media screen and (max-width: 900px) {
+    .line {
+      width: 50%;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .line {
+      width: 100%;
+    }
+  }
+  
+
+/**
+*** FOOTER
+**/
+
+footer{
+	background: #d49d9d;
+	color: white;
+	padding: 50px;
+}
+
+footer .footerAll {
+	display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .reseaux img{
+	padding-right: 50px;
+}
+
+footer .moi {
+	float: right;
+	padding: 0;
+}
